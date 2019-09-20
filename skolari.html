@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skolari Phonix</title>
+    <link rel="stylesheet" href="skolari.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="header">
+        <header><img src="C:\Users\PRINCESS_FOLASHADE\Desktop\skolari\phones (1).jpg" alt="my logo images"> SKOLARI PHONIX
+            <a href="#">Home</a>
+            <a href="https://www.google.com/search?q=infinix+phone+images&sxsrf=ACYBGNSWDfcJAjd8TRCq4GWHobw_sakZyQ:1568806125939&tbm=isch&source=iu&ictx=1&fir=b6mnnBJ4qHJzPM%253A%252CC1LbM-eZj9q5IM%252C_&vet=1&usg=AI4_-kRffWytfyDE-R1lsqREtiN3RSviug&sa=X&ved=2ahUKEwjjru6eotrkAhUWQEEAHeM5AfIQ9QEwAnoECAMQDA#imgrc=_&vet=1">products</a>
+            <select name="phones">
+                <option name="phones" value="Infinix">Infinix</option>
+                <option name="phones" value="Tecno">Tecno</option>
+                <option name="phones" value="Samsung">Samsung</option>
+                <option name="phones" value="Itel">Itel</option>
+                <option name="phones" value="Iphone">Iphone</option>
+                <option name="phones" value="Nokia">Nokia</option>
+                <option name="phones" value="Huwae">Huwae</option>
+                <option name="phones" value="Motorola">Motorola</option>
+            </select>
+
+            <a href="#">Services</a>
+
+        </header>
+    </div>
+    <div class="main">
+              <img class="mySlides" src="C:\Users\PRINCESS_FOLASHADE\Desktop\skolari\infinix.jpg" style="width:250%; height:400px;">
+              <img class="mySlides" src="C:\Users\PRINCESS_FOLASHADE\Desktop\skolari\tecno.jpg" style="width:250%; height: 400px;">
+              <img class="mySlides" src="C:\Users\PRINCESS_FOLASHADE\Desktop\skolari\iphone.jpg" style="width:250%; height: 400px">
+            </div>
+            <div class="dropdown"><a href="#">Products</a>
+                <li><a href="#infinix">Infinix</a> </li> 
+                <li><a href="#tecno">Tecno</a>   </li> 
+               <li> <a href="#ipod">Ipod</a> </li>>
+               <li> <a href="#huwai">Huwai</a> </li>  
+               <li> <a href="#nokia">Nokia</a> </li>   
+               <li> <a href="#itel">Itel</a> </li>
+                <li><a href="#samsung">Samsung</a></li>  
+               <li> <a href="#iphone">Iphone</a> </li>
+
+            </div>  
+            </div>
+            
+            <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;    
+              var x = document.getElementsByClassName("mySlides");
+              for  (i = 0;  i< x.length;  i++) {
+                  x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 1500); // Change image every 2 seconds
+            }
+            </script>
+            
+            
+    </div>
+    <div class="footer">
+        <table>
+            <tr>
+                <th><a href="#">Phone</a></th>
+                <th><a href="#"> Contact</a></th>
+                <th><a href="#">Help</a></th>
+                <th><a href="#">About us</a></th>
+            </tr>
+            <tr>
+                <td>07030625157</td>
+                <td>we are located @ Shop 15, <br>
+                     Fayose International Market, <br>
+                Ado-Ekiti</td>
+                <td>Do you need help?</td>
+                <td>We are Skolari Phonix, <br>
+                     we sell all kind of phones <br>
+                @ a very cheap price</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

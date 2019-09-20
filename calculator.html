@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>online calculator</title>
+<style>
+table{
+background-color: aqua;
+padding:0px;
+text-align: center;
+border: 2px solid black;
+margin: 0 auto;
+}
+td{
+height:  70%;
+width: 60px;
+color: black;
+background-color: aqua;
+padding: 0px;
+text-align: center;
+margin-top: 500px;
+}
+button{
+height: 40px;
+width: 40px;
+background-color: white;
+color: black;
+padding:3px;
+margin: 0;
+}
+input{
+height:20px;
+width: 100%;
+}
+button:hover{
+background-color:pink;
+</style>
+</head>
+<body>
+<script type="text/javascript">
+function number(value){
+document.form1.result.value+=value;
+}
+function clea(value){
+document.form1.result.value = value;
+}
+function evalua(){
+document.form1.result.value =eval(document.form1.result.value);
+}
+</script>
+<form name="form1" >
+<table align="center" >
+<tr>
+<td colspan="4"><h4>Simple Calculator</h4></td>
+</tr>
+<tr >
+<td colspan="4">
+<input type="text" name="result" placeholder="0"   disabled style="text-align: right"></td>
+</tr>
+<tr>
+<td>
+<button type="button" onclick="number(value)"  value="1" >1</button></td>
+<td><button type="button" onclick="number(value)"  value="2" >2</button></td>
+<td><button type="button" onclick="number(value)"  value="3" >3</button></td>
+<td><button type="button" onclick="number(value)"  value="+" >+</button></td>
+</tr>
+<tr>
+<td><button type="button" onclick="number(value)"  value="4" >4</button></td>
+<td><button type="button" onclick="number(value)"  value="5" >5</button></td>
+<td><button type="button" onclick="number(value)"  value="6" >6</button></td>
+<td><button type="button" onclick="number(value)"  value="-" >-</button></td>
+</tr>
+<tr>
+<td><button type="button"  onclick="number(value)"  value="7" >7</button></td>
+<td><button type="button" onclick="number(value)"  value="8" >8</button></td>
+<td><button type="button" onclick="number(value)"  value="9" >9</button></td>
+<td><button type="button" onclick="number(value)"  value="/" >/</button></td>
+</tr>
+<tr>
+<td><button type="button"  onclick="number(value)"  value="0" >0</button></td>
+<td><button type="button" onclick="number(value)"  value="*" >*</button></td>
+<td><button type="button" onclick="number(value)"  value="." ><b>.</b></button></td>
+<td><button type="button" onclick="number(value)"  value="%" >%</button></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><button type="button"  onclick="clea(value)"  value=""> C</button></td>
+<td colspan="2" align="center"><button type="button"  onclick="evalua()">= </button></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

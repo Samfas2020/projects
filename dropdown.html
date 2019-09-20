@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dorpdown</title>
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <div class="dropdown">
+            <button class="dropbtn">Phones
+                <i class="fa-fa caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Infinix</a>
+                <a href="#">Tecno</a>
+                <a href="#">Samsung</a>
+                <a href="#">Itel</a>
+                <a href="#">Alcatel</a>
+                <a href="#">Sony</a>              
+                 <a href="#">Iphone</a>
+                <a href="#">Ipad</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+
+        <img class="mySlides" src="C:\Users\PRINCESS_FOLASHADE\Desktop\skolari\infinix.jpg" style="width:250%; height:400px;">
+        <img class="mySlides" src="C:\Users\PRINCESS_FOLASHADE\Desktop\skolari\tecno.jpg" style="width:250%; height: 400px;">
+        <img class="mySlides" src="C:\Users\PRINCESS_FOLASHADE\Desktop\skolari\iphone.jpg" style="width:250%; height: 400px">
+    </div>
+    <div class="submain">
+    <form action="action_page.php" style="padding-top: 10px;">
+        <input type="text"  placeholder="username" required><br><br>
+        <input type="password" placeholder="password" required><br><br>
+        <button type="submit">Login</button> <button type="reset" value="Reset">Reset</button><br>
+        don't have an account?<a href="signup.html">Sign Up</a>
+    </form>
+
+    </div>
+    <div class="footer">
+            <a href="https://facebook.com" class="fa fa-facebook"></a>
+            <a href="https://twitter.com" class="fa fa-twitter"></a>
+            <a href="https://google.com" class="fa fa-google"></a>
+            <a href="https://linked.com" class="fa fa-linkedin"></a>
+            <a href="https://youtube.com" class="fa fa-youtube"></a>
+            <a href="http://instagram.com" class="fa fa-instagram"></a> Contact us @shop 15, Fayose Market, Ado-Ekiti
+                                        Ekiti, Nigeria phone: 07030625157
+
+
+    </div>
+
+    <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;   
+              var x = document.getElementsByClassName("mySlides");
+              for  (i = 0;  i< x.length;  i++) {
+                  x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 1500); // Change image every 2 seconds
+            }
+            </script>
+            
+            
+</body>
+</html>
